@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="AdminExtras" title="Admin Extras" version_string="1.0.0" version_id="1" url="" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates>
+    <template title="EXTRA.css"><![CDATA[]]></template>
+  </admin_templates>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="controller_pre_dispatch" execute_order="10" callback_class="AdminExtras_Listen" callback_method="controller_pre_dispatch" active="1" description="Enables the additional files / templates for the admin only."/>
+    <listener event_id="template_post_render" execute_order="20" callback_class="AdminExtras_Listen" callback_method="template_post_render" active="1" description="Add extra css and js files to admin."/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <optiongroups>
+    <group group_id="AdminExtras" display_order="7500" debug_only="0"/>
+    <option option_id="adminExtrasJsVersion" edit_format="textbox" data_type="integer" can_backup="1">
+      <default_value>1</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="AdminExtras" display_order="1"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_adminExtrasJsVersion" version_id="1" version_string="1.0.0"><![CDATA[File Versions]]></phrase>
+    <phrase title="option_adminExtrasJsVersion_explain" version_id="1" version_string="1.0.0"><![CDATA[Cache buster for the css / js files.]]></phrase>
+    <phrase title="option_group_AdminExtras" version_id="1" version_string="1.0.0"><![CDATA[Admin Extras]]></phrase>
+    <phrase title="option_group_AdminExtras_description" version_id="1" version_string="1.0.0"><![CDATA[]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <bb_code_media_sites/>
+  <template_modifications/>
+</addon>
