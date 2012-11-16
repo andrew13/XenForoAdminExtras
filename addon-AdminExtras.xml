@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="AdminExtras" title="Admin Extras" version_string="1.0.0" version_id="1" url="" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="AdminExtras" title="Admin Extras" version_string="1.0.1" version_id="10001" url="" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
   <admin_templates>
-    <template title="EXTRA.css"><![CDATA[]]></template>
+    <template title="EXTRA.css"><![CDATA[/* Remove Centering */
+/* Make Width Full */
+/*
+.pageWidth{ margin: inherit; width: 100%; }
+#contentContainer{ width:88%;}
+#content{ width: inherit; }
+form#templateEditor{ width: 100%; }
+.CodeMirror { 
+  width: 100%;
+}
+.CodeMirror-scroll { height:600px; }*/
+]]></template>
   </admin_templates>
   <code_events/>
   <code_event_listeners>
